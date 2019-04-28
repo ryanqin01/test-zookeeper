@@ -1,0 +1,16 @@
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# Maven files
+target/
+.flattened-pom.xml
+
+# Mac files
+.DS_Store
+
+.project
+.classpath
+
+**/*.log

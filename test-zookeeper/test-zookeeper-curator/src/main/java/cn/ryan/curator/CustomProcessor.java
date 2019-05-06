@@ -1,4 +1,4 @@
-package com.opentext.curator;
+package cn.ryan.curator;
 
 @FunctionalInterface
 public interface CustomProcessor<T> {

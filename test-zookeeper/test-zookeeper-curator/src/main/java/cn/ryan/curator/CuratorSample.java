@@ -1,4 +1,4 @@
-package com.opentext.curator;
+package cn.ryan.curator;
 
 public class CuratorSample {
 

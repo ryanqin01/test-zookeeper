@@ -1,4 +1,4 @@
-package com.opentext.curator.kafka;
+package cn.ryan.curator.kafka;
 
 import java.util.Properties;
 

@@ -1,27 +1,27 @@
-package com.opentext.curator.watcher;
+package cn.ryan.curator.watcher;
 
-import org.apache.curator.framework.recipes.cache.PathChildrenCache;
+import org.apache.curator.framework.recipes.cache.TreeCache;
 
-import com.opentext.curator.Utils;
+import cn.ryan.curator.Utils;
 
-public class PathCacheSample {
+public class TreeCacheSample {
 
 	public static void main(String[] args) throws Exception {
 		Utils.process((client) -> {
 			client.create().forPath("/curator", "ctest".getBytes());
-			PathChildrenCache cache = new PathChildrenCache(client, "/curator", true);
+			TreeCache cache = new TreeCache(client, "/curator");
 			cache.getListenable().addListener((c, event) -> {
 				switch (event.getType()) {
 					case INITIALIZED:
 						System.out.println(event);
 						break;
-					case CHILD_ADDED:
+					case NODE_ADDED:
 						System.out.println(event);
 						break;
-					case CHILD_UPDATED:
+					case NODE_UPDATED:
 						System.out.println(event);
 						break;
-					case CHILD_REMOVED:
+					case NODE_REMOVED:
 						System.out.println(event);
 						break;
 					default:

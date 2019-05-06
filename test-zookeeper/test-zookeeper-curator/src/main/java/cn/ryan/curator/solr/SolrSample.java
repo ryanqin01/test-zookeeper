@@ -1,4 +1,4 @@
-package com.opentext.curator.solr;
+package cn.ryan.curator.solr;
 
 import java.util.ArrayList;
 import java.util.List;

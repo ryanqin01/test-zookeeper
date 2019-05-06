@@ -1,11 +1,11 @@
-package com.opentext.curator.lock;
+package cn.ryan.curator.lock;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import org.apache.curator.framework.recipes.locks.InterProcessMutex;
 
-import com.opentext.curator.Utils;
+import cn.ryan.curator.Utils;
 
 public class DistributedLockSample {
 

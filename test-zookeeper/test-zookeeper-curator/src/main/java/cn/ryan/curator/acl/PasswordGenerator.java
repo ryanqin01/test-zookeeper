@@ -1,4 +1,4 @@
-package com.opentext.curator.acl;
+package cn.ryan.curator.acl;
 
 import java.security.NoSuchAlgorithmException;
 

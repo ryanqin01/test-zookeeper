@@ -1,8 +1,8 @@
-package com.opentext.curator.watcher;
+package cn.ryan.curator.watcher;
 
 import org.apache.curator.framework.api.CuratorListener;
 
-import com.opentext.curator.Utils;
+import cn.ryan.curator.Utils;
 
 public class CuratorListenerSample2 {
 

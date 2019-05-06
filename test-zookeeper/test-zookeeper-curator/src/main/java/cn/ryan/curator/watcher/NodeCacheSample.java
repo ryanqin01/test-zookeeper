@@ -1,8 +1,8 @@
-package com.opentext.curator.watcher;
+package cn.ryan.curator.watcher;
 
 import org.apache.curator.framework.recipes.cache.NodeCache;
 
-import com.opentext.curator.Utils;
+import cn.ryan.curator.Utils;
 
 public class NodeCacheSample {
 
